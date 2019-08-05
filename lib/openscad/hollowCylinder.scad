@@ -23,11 +23,9 @@ translate([15, 0, 0]) { hollowCylinder(d=15, h=5, wallWidth=0.1); }
 translate([30, 0, 0]) { hollowCylinder(d=10, h=2, wallWidth=4.5); }
 */
 
-module hollowCylinder(d=5, h=10, wallWidth=1, $fn=128)
-{
-	difference()
-	{
-		cylinder(d=d, h=h, center=true);
-		translate([0, 0, -0.1]) { cylinder(d=d-(wallWidth*2), h=h+0.2, center=true); }
+module hollowCylinder(d=5, h=10, wallWidth=1, $fn=100) {
+	difference() {
+            cylinder(d=d, h=h, center=true);
+            translate([0, 0, -0.1])  cylinder(d=d-(wallWidth*2), h=h+0.2, center=true); 
 	}
 }

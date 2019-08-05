@@ -1,4 +1,4 @@
-use <use/openscad/hollowCylinder.scad>
+use <lib/openscad/hollowCylinder.scad>
 $fn=30;
 tensioner();
 

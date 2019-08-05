@@ -5,8 +5,8 @@
 //MAgnetic Ferrite Rotary Encoder
 //Lug Bolts
 //
-use </Users/luke/Documents/2D-3D-FlowmBot/use/shapes.scad>
-use </Users/luke/Documents/2D-3D-FlowmBot/use/scad-utils/morphology.scad>
+use <lib/openscad/shapes.scad>
+//use </Users/luke/Documents/2D-3D-FlowmBot/use/scad-utils/morphology.scad>
 $fn = 40;
 
 //WHEEL

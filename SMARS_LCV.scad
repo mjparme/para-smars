@@ -4,14 +4,14 @@
 chassis_render();
 //print test axles for bearing experimentaiton
 //bearing_608_axle_test();
-use <use/openscad/hollowCylinder.scad>
-use <use/openscad/torus.scad>
-use <use/openscad/roundedCube.scad>
-use <use/openscad/pinConnector.scad>
-use <use/openscad/shapes.scad>
-use <use/StepMotor_28BYJ-48.scad>
-use <use/smars_18650_single_holder.scad>
-use <use/Nut_Job.scad>
+use <lib/openscad/hollowCylinder.scad>
+use <lib/openscad/torus.scad>
+use <lib/openscad/roundedCube.scad>
+use <lib/openscad/pinConnector.scad>
+use <lib/openscad/shapes.scad>
+use <lib/StepMotor_28BYJ-48.scad>
+use <lib/smars_18650_single_holder.scad>
+use <lib/Nut_Job.scad>
 
 //include configuration
 include <configuration_parameters.scad>

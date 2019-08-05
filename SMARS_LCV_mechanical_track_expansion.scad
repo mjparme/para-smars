@@ -1,11 +1,14 @@
+use <SMARS_track_tensioner_pins.scad>
+
 $fn=30;
 
-    //scale([1,1.02,1]);
-    //track_lcv();
-    pins();
-module track_lcv(){
+//scale([1,1.02,1]);
+//track_lcv();
+pins();
+
+module track_lcv() {
     render()
-    difference(){
+    difference() {
         translate([0,0,-2])
         import("import/mechanical_track-orig-import-dont-print-use-modified.stl");
 
@@ -21,7 +24,6 @@ module track_lcv(){
         translate([0,-6.25,0])
         cylinder(h=20, d=2.4, center=true);    
     }
-
 }
 
 
