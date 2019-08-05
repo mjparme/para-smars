@@ -30,8 +30,7 @@ function dovetailJointLength() = 60;
 function dovetailJointDepth() = 10;
 function dovetailJointBaseDepth(depth=dovetailJointDepth()) = depth*0.20;
 
-module dovetailJoint(width=dovetailJointWidth(), length=dovetailJointLength(), depth=dovetailJointDepth(), female=false, stopLength=0)
-{
+module dovetailJoint(width=dovetailJointWidth(), length=dovetailJointLength(), depth=dovetailJointDepth(), female=false, stopLength=0) {
 	dovetailClearanceX = 0.90;
 	dovetailClearanceY = 0.30;
 
@@ -41,8 +40,7 @@ module dovetailJoint(width=dovetailJointWidth(), length=dovetailJointLength(), d
 		dovetailJointMale(width, length, depth, stopLength, dovetailClearanceX, dovetailClearanceY);
 }
 
-module dovetailJointFemale(width, length, depth, stopLength)
-{
+module dovetailJointFemale(width, length, depth, stopLength) {
 	baseDepth = depth*0.20;
 
 	difference()
@@ -54,8 +52,7 @@ module dovetailJointFemale(width, length, depth, stopLength)
 	}
 }
 
-module dovetailJointMale(width, length, depth, stopLength, clearanceX, clearnaceY)
-{
+module dovetailJointMale(width, length, depth, stopLength, clearanceX, clearnaceY) {
 	jointDepth = (depth*0.80)-clearnaceY;
 	baseDepth = dovetailJointBaseDepth(depth);
 	jointWidthWide = (width*0.70)-clearanceX;
@@ -71,7 +68,6 @@ module dovetailJointMale(width, length, depth, stopLength, clearanceX, clearnace
 }
 
 // From: https://github.com/robofun/openscad-utils/blob/master/trapezoid.scad
-module trapezoid(width_base, width_top, height, thickness)
-{
+module trapezoid(width_base, width_top, height, thickness) {
 	linear_extrude(height = thickness) polygon(points=[[0,0],[width_base,0],[width_base-(width_base-width_top)/2,height],[(width_base-width_top)/2,height]], paths=[[0,1,2,3]]); 
 }

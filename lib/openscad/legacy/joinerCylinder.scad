@@ -1,4 +1,4 @@
-include </mnt/compendium/DevLab/common/openscad/common.scad>;
+include <common.scad>;
 
 joinerNutDiameter = 8.60;
 joinerNutDepth = 3.70;

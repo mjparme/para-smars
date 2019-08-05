@@ -1,4 +1,4 @@
-include </mnt/compendium/DevLab/common/openscad/common.scad>;
+include <common.scad>;
 
 module nailTab()
 {
